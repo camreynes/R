@@ -1,0 +1,75 @@
+---
+title: "Lab 2"
+author: "Cameron Reynes"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=TRUE)
+#echo = TRUE - allows for knitting
+#eval - include results
+```
+
+# Basic Data Types
+## Here are some basic data types in R
+  *  Character
+  *  Factor
+  *  Numeric
+  *  Integer
+  *  Logical
+  *  Complex
+  
+## We will focus on  the use of the first five types
+
+# Character - 1
+## A character object is used to store text, letters, or words (strings) in R
+
+```{r} 
+x<-"Hello"
+y<-"UD Students!"
+class(x) # class() function obtains the data type
+class(y)
+
+nchar(x) # use nchar() to count the number of characters
+
+# Character - 2
+
+## If we want to combine two strings into one string, we can use paste() or paster()() function
+
+paste(x,y)
+
+paste(x,y,sep=",") # separates with ','
+
+paste(x,y,sep=", ") # separates with ', '
+
+paste(x, ", ", y) #same output with ', '
+
+paste0(x,y) #sep = N/A 
+
+paste(x,y,sep="")
+
+# Character - 3
+## Here we give one advanced example
+
+allfiles1 <- paste("file_", 1:5)
+allfiles2 <- paste("file_", 1:5,collapse = "*") #collapse turns set of strings into single string
+allfiles3 <- paste("file", 1:5, sep = "_")
+
+allfiles1
+allfiles2
+allfiles3
+
+x<-NA_character_ #empty character
+class(x)
+
+# Factor Object (stores categorical / qualitative variables)
+
+grade <- factor(c("A","C","B","B-","A","C+","D","A-","B+","C-"))
+grade
+
+gender <- c("M","F","F","M","M","M","F","M","F")
+gender <- as.factor(gender)
+gender
+
+```

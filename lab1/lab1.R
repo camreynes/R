@@ -1,0 +1,77 @@
+
+# Simple Addition
+7+11
+7-11
+7 - 11
+
+# Example of Multiplication and Division
+7*11
+7/11
+7 / 11
+
+# More examples
+9 / (1+3)
+9 / 1 + 3
+5*2     +    3
+8 %% 3
+8 %/% 3
+
+12^2 # integer square
+
+# Multiple codes on one line:
+
+7/3 ; 7*3
+
+# Assignment Operations: Equal Sign and Arrow in R
+a1 = 7
+b1 = 11
+
+a2 <- 7
+11 -> b2
+
+mean(x <- c(1,8,4,9,13))
+x
+# x = is used in a function, however if we did this we could not
+# have the 9th line calling x as nothing would be assigned to it
+
+mean(y <- c(1,8,4,9,13))
+y
+
+# In the first case x is an argument for a function (caused an error in my case); while the second case assigns a vector to x then finds the mean value of it
+
+# Examples defining R objects
+x <- 4
+y = 5
+x+y
+z<-x+2*y
+
+# compute the value of an object
+x <- 6
+x
+z < -9
+a = x^2
+
+log(10)
+
+log(10,10)
+
+# Parentheses, Brackets & Curly Brackets
+
+# Parentheses, (), are used to call functions. Brackets, [] are used to obtain values in a data structure, Curly Brackets, {} are used to denote a block of code within in a conditional statement
+
+# Here, we give examples about the use of () and []. THe use of curly brackets will be introduced later.
+
+w <- c(17, 57, 69, 50, 100, 68, 29, 16, 65, 5, 15, 25) # c() combines objects into a set
+median(w) # finds the median of the set
+w[3] # finds the value of the third element in w
+w[1:2] # finds the values of the first and second elements
+w[2:4] # finds the values between the second and fourth element
+w[c(2,5,8)] # only find the values of the second, fifth and eigth elements in w
+w[-5] # the fifth element is removed
+w[w < 50] # obtain values satisfying the condition
+
+
+
+
+
+
